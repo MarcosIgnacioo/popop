@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: blueviolet;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px;
+}
+
+#page-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.title{
+    font-size: 90px;
+}
+#main-nav{
+    background-color: #13a4a4;
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 1px;
+}
+#main-nav li{
+    margin-right: 50px;
+    display: inline-block;
+}
+
+#main-nav a{
+    color: rgb(255, 255, 255);
+    padding: 1.5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#main-nav #adicction{
+    padding-top: 2px;
+    padding-bottom: 1px;
+    background-color: rgb(236, 111, 111)
+}
