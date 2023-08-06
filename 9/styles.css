@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'KlavikaBoldBold';
+    src: url(./KlavikaBoldBold.ttf);
+}
+h1{
+    font-family: KlavikaBoldBold, Arial, Helvetica, sans-serif;
+}
+.main-nav{
+    margin-top: 10px;
+    font-family:KlavikaBoldBold, Arial, Helvetica, sans-serif;
+    list-style:none;
+    padding: 0;
+    background-color: #13a4a4;
+}
+.main-nav__item{
+    display: inline-block;
+    color: red;
+}
+
+/*
+    El atributo display es lo que cambia la manera en la que
+    se muestran los elementos, en este caso se ponen todos
+    en horizontal
+*/
+.main-nav__item a {
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover{
+    color: blueviolet;
+}
+
+.main-nav__item a:active{
+    color: red;
+}
+/*
+    Pseudo clases:
+
+    la pseudo clase hover es cuando pasas el mouse sobre
+    un elemento
+
+        Cuando pases el mouse por el objeto 
+        main-nav__item se pondra de color morado
+
+    La pseudo clase active es cuando el elemento ha sido
+    presionado/activado
+
+        Cuando clickees a main-nav__item, éste se pondra 
+        de color rojo
+*/
+.main-nav__item a::after{ 
+    content: " | ";
+}
+
+/*
+    Pseudo Elementos
+
+    a::after significa
+
+    Despues del elemento de a, agregale el siguiente
+    contenido: " | "
+*/
