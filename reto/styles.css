@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: "Flexo-Medium";
+    src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot");
+    src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo-Medium")format("svg");
+}
+figure{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+}
+figure img {
+    max-height: 300px;
+}
+.pokedex{
+    position: absolute;
+}
+.pokedex__descripcion{
+    font-size: 1.6rem;
+    
+    border: 10px black solid;
+    border-radius: 10px;
+    
+    width: 50vw;
+    
+    position: absolute;
+    left: 25vw;
+    top: 55vh;
+    
+    padding: 10vh 10vw;
+}
+
+.pokedex__top{
+    background-color: #E09191;
+    position: relative;
+    top: 55vh;
+    left: 25vw;
+    width: 50vw;
+    height: 50px;
+    border-bottom: 10px black solid;
+    border-radius: 10px;
+}
+p{
+    font-family: Flexo-Medium;
+}
+.pokedex__top h1 {
+
+    font-family: Flexo-Medium;
+    color: #f8f0f0;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.3rem;
+}
+

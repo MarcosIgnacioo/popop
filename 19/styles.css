@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+.parent{
+    border: 2px black dotted;
+    display: inline-block;
+}
+.box{
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: black;
+    display: inline-block;
+    background-color: rgb(255, 191, 191);
+    width: 100px;
+    height: 100px;
+}
+#two{
+    position: absolute;
+    background-color: rgb(165, 231, 165);
+}
