@@ -25,8 +25,10 @@ figure{
 figure img {
     max-height: 300px;
 }
+#pokeball{
+    height: 10vh;
+}
 .pokedex{
-    font-family: Flexo-Medium;
     text-align: center;
     
     border: 5px black solid;
@@ -47,15 +49,17 @@ p{
     padding: 10px 10px;
     background-color: white;
 }
+
 html{
+
+    font-family: Flexo-Medium;
+    height: 100vh;
+    width: 100vw;
     --r2: #E1BEAC;
     --r1: #ECCEBE;
     background-image: conic-gradient(
-        var(--r2) 0, var(--r2) 90deg,
-        var(--r2) 90deg, var(--r2) 180deg,
-        var(--r1) 180deg, var(--r1) 270deg,
-        var(--r1) 270deg, var(--r1) 360deg
+        var(--r1) 0, var(--r1) 15deg,
+        var(--r2) 15deg, var(--r2) 200deg,
+        var(--r1) 200deg, var(--r1) 360deg
     );
-
-
-}
+    }
