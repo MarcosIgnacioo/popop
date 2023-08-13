@@ -20,13 +20,19 @@ figure{
     justify-content: center; /* Centra horizontalmente */
     align-items: center;
     position: relative;
-    top: 3vh;
+    top: 10vh;
+    margin-bottom: 15px;
 }
 figure img {
     max-height: 300px;
 }
-#pokeball{
-    height: 10vh;
+.pokedex-numero{
+    height: 1.3rem;
+    margin: 0;
+    padding-left: 15%;
+    font-size: 1.3rem;
+    color: #ffffff;
+    padding-top: 15px;
 }
 .pokedex{
     text-align: center;
@@ -38,7 +44,7 @@ figure img {
     left: 33%;
 }
 .pokedex__top{
-    background-color:  #E09191;;
+    background-color:  #E09191;
     border-radius: 5px 5px 0 0;
     border-bottom: 5px black solid;
 }
@@ -57,9 +63,14 @@ html{
     width: 100vw;
     --r2: #E1BEAC;
     --r1: #ECCEBE;
-    background-image: conic-gradient(
+   /*background-image: conic-gradient(
         var(--r1) 0, var(--r1) 15deg,
         var(--r2) 15deg, var(--r2) 200deg,
         var(--r1) 200deg, var(--r1) 360deg
+    );*/
+    background-image: conic-gradient(
+        var(--r1) 0, var(--r1) 40deg,
+        var(--r2) 40deg, var(--r2) 220deg,
+        var(--r1) 90deg, var(--r1) 150deg
     );
     }
