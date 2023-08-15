@@ -1,11 +1,3 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-html{
-    font-size: 62.5%;
-}
 @font-face {
     font-family: "Flexo-Medium";
     src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot");
@@ -15,16 +7,45 @@ html{
     url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo-Medium")format("svg");
 }
-img{
-    margin-top: 1%;
-    margin-left: 2%;
-    max-height: 1%;
-    width: 5%;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: Flexo-Medium;
+}
+
+figure{
     display: inline-block;
+}
+img{
+    max-height: 5vh;
+    min-height: 50px;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    margin-top: 5px;
 }
 ul{
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 li{
+    font-size: 1.6rem;
     display: inline-block;
+    padding-right: 5vw;
+    margin-top: 2vh;
 }
+
+@media (max-width: 450px) {
+    li {
+        font-size: 1rem;
+        margin-top: 1vh;
+    }
+    img{
+        height: 5vh;
+    }
+  }
