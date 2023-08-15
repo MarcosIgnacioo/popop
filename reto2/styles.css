@@ -15,49 +15,44 @@ html{
     url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo-Medium")format("svg");
 }
-figure{
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;
-    position: relative;
-    top: 10vh;
-    margin-bottom: 15px;
-}
-figure img {
-    max-height: 300px;
-}
-.pokedex-numero{
-    height: 1.3rem;
-    margin: 0;
-    padding-left: 15%;
-    font-size: 1.3rem;
-    color: #E09191;
-    padding-top: 15px;
-}
-.pokedex{
+h1{
     text-align: center;
+    font-size: 1.1rem;
+
+    min-width: 11vw;
+    height: 5%;
     
-    border: 5px black solid;
-    border-radius: 10px;
-    width: 35vw;
-    position: relative;
-    left: 33%;
-}
-.pokedex__top{
-    background-color:  #E09191;
-    border-radius: 5px 5px 0 0;
-    border-bottom: 5px black solid;
+    background-color: #c66060;
+    
+    position: absolute;
+    top: 60%;
+    left: 44.5vw;
+  
+    padding-top: 7px;
+    border-radius: 40px;
 }
 p{
-    height: inherit/2;
-    width: inherit/2;
-    text-align: justify;
-    padding: 10px 10px;
-    background-color: white;
+    background-color: #d1f7a3;
+    color: black;
+    min-height: 11vh;
+    width: 25vw;
+    text-align: center;
+    padding: 20px 10px;
+    position: absolute;
+    top: 62%;
+    left: 37.5vw;
+    border-radius: 10px;
+}
+figure{
+    margin-left: 15vw;
+}
+img{
+    max-width: 35vw;
+    max-height: 75vh;
 }
 
 html{
-
+    color: azure;
     font-family: Flexo-Medium;
     height: 100vh;
     width: 100vw;
@@ -68,9 +63,4 @@ html{
         var(--r2) 15deg, var(--r2) 200deg,
         var(--r1) 200deg, var(--r1) 360deg
     );*/
-    background-image: conic-gradient(
-        var(--r1) 0, var(--r1) 40deg,
-        var(--r2) 40deg, var(--r2) 220deg,
-        var(--r1) 90deg, var(--r1) 150deg
-    );
     }
