@@ -18,34 +18,62 @@ html{
     font-family: Flexo-Medium;
 }
 
-figure{
-    display: inline-block;
-}
 img{
     max-height: 5vh;
     min-height: 50px;
     padding-left: 2.5vw;
     padding-right: 2.5vw;
-    margin-top: 5px;
+    margin-top: 2.5px;
 }
 ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
 }
 li{
+    break-inside: avoid-column;
     font-size: 1.6rem;
     display: inline-block;
     padding-right: 5vw;
     margin-top: 2vh;
 }
+main{
+
+    display: flex;
+}
+.main-content{
+    background-color: blue;
+    min-width: 80%;
+    width: 80%;
+    height: auto;
+}
+.panel-botones{
+    background-color: red;
+    min-width: 25vw;
+    padding-left: 2%;
+    padding-bottom: 10%;
+    display: inline-block;
+}
+button{
+    background: none;
+    width: 13vw;
+    height: 15vh;
+    margin-top: 5vh;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+    display: block;
+    border-radius: 10px;
+}
 
 @media (max-width: 450px) {
-    li {
-        font-size: 1rem;
-        margin-top: 1vh;
-    }
+    
     img{
         height: 5vh;
+    }
+  }
+
+  
+@media (max-width: 800px) {
+    button{
+        width: 20vw;
+        font-size: 1rem;
     }
   }
