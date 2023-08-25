@@ -7,7 +7,11 @@
     url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo-Medium")format("svg");
 }
-
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -22,19 +26,19 @@ img{
     max-height: 5vh;
     min-height: 50px;
     padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    margin-top: 2.5px;
-}
-ul{
-    display: flex;
-    align-items: center;
+    padding-right: 3vw;
+    padding-top: .5rem;
+    margin: .5rem;
 }
 li{
-    break-inside: avoid-column;
+    list-style: none;
+}
+li a {
     font-size: 1.6rem;
-    display: inline-block;
-    padding-right: 5vw;
-    margin-top: 2vh;
+    text-decoration: none;
+    color: brown;
+    padding: 1rem;
+    display: block;
 }
 main{
 
@@ -67,12 +71,26 @@ button{
     display: block;
     border-radius: 10px;
 }
+.toggle-button{
+    position: absolute; /* Para ponerlo a la derecha siempre sin que se arruine nada */
+    top: 2rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
 
 @media (max-width: 450px) {
     
-    img{
-        height: 5vh;
-    }
   }
 
   
@@ -86,18 +104,31 @@ button{
   
   
 @media (max-width: 605px) {
-    button{
-        width: 20vw;
-        font-size: 1rem;
+  
+    img{
+        height: 5vh;
     }
-    ul{
-        position: fixed;
-        color: red;
-        left: 100%;
+    .toggle-button{
+        background-color: black;
+        display: flex;
     }
-    .menu-display input{
-        font-size: 1.6rem;
-        display: block;
-        background-color: black;   
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links{
+        width: 100%;
+    }
+    .navbar-links ul{
+        display: none;
+        flex-direction: center;
+        width: 100%;
+    }
+    
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links a{
+        padding: 0.5rem 1rem;
     }
 }
