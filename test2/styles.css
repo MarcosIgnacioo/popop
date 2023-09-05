@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Flexo-Medium";
+    src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot");
+    src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo-Medium")format("svg");
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: Flexo-Medium;
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: baseline;
+    padding: .5rem;
+    gap: 1rem;
+}
+.dropdown.active > .link:active, .link:hover{
+    color: rgb(230, 179, 244);
+} /*Cuando este focuseado y hovereado el color del boton se mantiene, es decir cuando se tenga el 
+dropdown abierto, el color se mantendrá rosita*/
+.link:hover{
+    color: rgb(230, 179, 244);
+}
+.link{
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 4rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown{ 
+    position: relative;
+}
+.dropdown-menu{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 2rem);
+    background-color: rgb(255, 255, 255);
+    padding: 0.75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 2px rgb(200, 200, 200);
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+
+}  
+/* Aqui lo que dice basicamente es obtén lo que esté en
+la clase dropdown, el botón que se esté presionando
+y seleccionar dropdown-menu que es hermano del boton*/
+.dropdown.active > .link + .dropdown-menu {
+    opacity: 100;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.dropdown-links{
+    color: red;
+    display: flex;
+    gap: 0.25rem;
+}
+
+/*Lo de los pointer events lo que hace es que
+como se va a usar la opacidad para hacer
+la animación el elemento en si está siempre
+presente, por lo que, al usar el 
+translatey se sube tantito mas el contenido por lo que
+imposibilita o dificulta la interacción con el boton
+de información, por lo que, se desactiva las propiedades
+de que pueda interactuar el mouse con el dropdown menu
+y se reactiva cuando el dropdown menu esta activo*/
