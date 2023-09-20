@@ -23,7 +23,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15vh;
+    height: 10vh;
     padding: 5px 10%;
 }
 .header .logo{
@@ -41,11 +41,12 @@ html{
     padding: 0 70px;
     transition: all 0.1s;
 }
-.header .nav-links a:hover{
-    color: #866CBA;
-}
 .header .nav-links li:hover{
     transform: scale(1.1);
+    color: #866CBA;
+}
+.header .nav-links a:hover{
+    color:inherit;
 }
 .header .nav-links a{
     font-weight: 500;
@@ -76,11 +77,9 @@ input[type="search"]::-webkit-search-cancel-button {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
     cursor: pointer;
 }
-main{
+main .banner{
     width: 100vw;
     background-color: #866CBA;
-}
-main .banner{
     height: 25vh;
     align-items: center;
     display: flex;
@@ -94,12 +93,70 @@ main .banner{
     font-weight: 500;
     font-size: 4rem;
 }
-@media (max-width: 440px) {
+
+#titulo{
+    display: block;
+}
+.encabezado {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 5%;
+}
+
+.encabezado img {
+    max-width: 100px; 
+    margin-right: 5%; 
+}
+
+.encabezado h1 {
+    font-size: 2.4rem; 
+    margin: 0; 
+    font-weight:300;
+}
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-content .servicio{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 4%;
+}
+main #titulo{
+    padding: 2% 2% 0 2%;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.main-content p{
+    margin-left: 16.5%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+footer{
+    width: 100%;
+    min-height: 12.35%;
+    background-color: #d9d9d9;
+    color: #866CBA;
+}
+footer h1{
+    padding: 2.47%;
+    text-align: center;
+}
+@media (max-width: 540px) {
 
     .header{
         display: block;
         padding: 0;
-        margin: 10vw;
+        margin: 5vw;
     }
     .banner img{
         height: 35px;
@@ -124,13 +181,39 @@ main .banner{
     }
     
     #search-bar{
-        width: 30vw;
+        width: 90vw;
     }
     
-main .banner div{
-    display: inline-block;
-}
-main .banner{
-    margin-top: 20vh;
-}
+    main .banner div{
+        display: inline-block;
+    }
+    main .banner{
+        margin-top: 20vh;
+    }
+    
+    .main-content{
+        display: block;
+    }
+    .main-content .servicio{
+        display: block;
+        font-size: 1rem;
+        padding: 4%;
+    }
+    
+    main #titulo{
+        font-size: 2rem;
+        padding: 5%;
+        text-align: center;
+    }
+    .encabezado img {
+        height: 20px;
+    }
+    
+    footer h1{
+        padding: 6%;
+    }
+    
+    .main-content p{
+        margin-left: 10.5%;
+    }
 }
