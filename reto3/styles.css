@@ -70,7 +70,25 @@ main {
     padding: 20px;
     background-color: #fbe5d9;
 }
-
+table{
+    min-width: min-content;
+    font-size: 4rem;
+    margin-left: 9vw;
+    margin-top: 9vh;
+}
+td  h1{
+    font-size: smaller;
+    background-color: #fff;
+    height: 10vh;
+}
+td div{
+    width: 100px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    background-color: #71e959;
+}
+  
 button {
     flex: 2;
     border: none;

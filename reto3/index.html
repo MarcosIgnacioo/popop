@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position</title>
-    <link rel="stylesheet" href="./styles.css">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <nav class="navbar">
-      <div class="brand-title">LurantisDex</div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </div>
-      </nav>
-      <main>
-        <div class="panel-botones">
-            <button class="statsButton">Estadísticas</button>
-            <button class="evolutionButton">Evolución</button>
-            <button class="affinitiesButton">Afinidades <br> de tipos</button>
-            <button class="cardsButton">Cartas <br> de <br> Lurantis</button>
-        </div>
-        <div class="test">
-          content ext
-        </div>
-        <div class="main-content">
-            <p>asdas</p>
-        </div>
-    </main>
-    <script src="./script.js"></script>
+  <nav class="navbar">
+    <div class="brand-title">LurantisDex</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="panel-botones">
+      <button class="statsButton">Estadísticas</button>
+      <button class="evolutionButton">Evolución</button>
+      <button class="affinitiesButton">Afinidades <br> de tipos</button>
+      <button class="cardsButton">Cartas <br> de <br> Lurantis</button>
+    </div>
+    <div class="main-content">
+      <table>
+        <tr class="stat-line" id="hp">
+          <td><h1>Hp:</h1></td>
+          <td><div id="hp-bar-stat">///</div></td>
+        </tr>
+        <tr class="stat-line" id="attack">
+          <td><h1>Attack:</h1></td>
+          <td><div id="attack-bar-stat">///</div></td>
+        </tr>
+        <tr class="stat-line" id="defense">
+          <td><h1>Defense:</h1></td>
+          <td><div id="defense-bar-stat">///</div></td>
+        </tr>
+        <tr class="stat-line" id="special-attack">
+          <td><h1>Special-Attack:</h1></td>
+          <td><div id="special-attack-bar-stat">///</div></td>
+        </tr>
+        <tr class="stat-line" id="special-defense">
+          <td><h1>Special-Defense:</h1></td>
+          <td><div id="special-defense-bar-stat">///</div></td>
+        </tr>
+        <tr class="stat-line" id="speed">
+          <td><h1>Speed:</h1></td>
+          <td><div id="speed-bar-stat">///</div></td>
+        </tr>
+      </table>
+    </div>
+    
+  </main>
+  <script src="./script.js"></script>
 </body>
+
 </html>

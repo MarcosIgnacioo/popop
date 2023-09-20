@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Flexo-Medium";
+    src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot");
+    src: url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d2d21cf0ee4c1d969d8a4dccc587ab26.svg#Flexo-Medium")format("svg");
+}
+html{
+    font-size: 62.5%;
+    font-family:Flexo-Medium;
+}
+body{
+    background-color: #cefaca;
+}
+.top{
+    height: 20vh;
+    background-color: #4eaa41;
+}
+.mid{
+    position: absolute;
+    height: inherit;
+    top: 5vh;
+    width: 70vw;
+    left: 15vw;
+    background-color: #ffffff;
+    box-shadow:10px 10px 10px rgba(182, 178, 178, 0.5)
+}
+#content, .cosas_extra{
+    margin: 2% 7% 2% 7%;
+}
+#linea-verde{
+    height: 3vh;
+    background-color: #95f28c;
+}
+h1{
+    margin: 4%;
+    font-size: 3rem;
+}
+h2{
+    color: #ffffff;
+    font-size: 3rem;
+    padding: 3%;
+    background-color: #69b35e;
+}
+table {
+    color: #492808;
+    
+    border-collapse: collapse;
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Color de fondo para filas impares */
+}
+th, td {
+    border: 1px rgba(0, 0, 0, 0.164) solid;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle; /* Centrar verticalmente */
+}
+th {
+    background-color: #7e68386e;
+    color: #ffffff;
+    align-items: center;
+}
+h3{
+    font-size: 2.6rem;
+    padding: 0;
+    margin: 2% 2% 2% 1%;
+    font-size: 2.4rem;
+    color: #603b16;
+}
+label{
+    font-size: 2.4rem;
+}
+#retroalimentacion{
+    border: 0;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 1%;
+    margin: 2% 0 2% 0;
+    width: 60vw;
+    height: 5vh;
+}
+
+button{
+    font-weight: bold;
+    cursor: pointer;
+    margin: 2% 0 2% 0;
+    padding: 2%;
+    border: none;
+    background-color: #eeeeee;
+}
+.footer {
+    display: flex; /* Establece un contenedor de tipo flex */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+.progress-container {
+    margin-left: 30vw;
+    border-radius: 10px;
+    width: 10vw;
+    height: 15px;
+    background-color: #e5e2e2;
+}
+
+.progress-bar {
+    border-radius: 10px;
+    width: 3vw; /* Cambia este valor para cambiar el progreso (ejemplo: 75% para el 75%) */
+    height: 100%;
+    background-color: #54e1f1; /* Color de la barra de progreso */
+}
+span{
+    margin-left: 2%;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        display: inline-block; 
+        align-items: center; 
+    }
+    .progress-container {
+        margin-left: 0;
+    }
+    
+}
