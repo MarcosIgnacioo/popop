@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <h1>Formulario de inscripción al curso</h1>
+       <form action="">
+        <label for="nombre_completo">Nombre completo</label><br>
+        <input type="text" placeholder="Tu respuesta" id="nombre_completo"><br>
+        <label for="correo_electronico">Correo electrónico</label><br>
+        <input type="email" placeholder="Tu respuesta" id="correo_electronico"><br>
+        <label for="fecha_nacimiento">¿Cuál es tu fecha de nacimiento?</label><br>
+        <input type="date" placeholder="Tu respuesta" id="fecha_nacimiento"><br>
+        <label for="interes_curso">¿Por qué te interesa el curso?</label><br>
+        <textarea id="interes_curso" rows="4" cols="50"></textarea> <br>
+        <label >Formato del curso: </label> <br>
+          <input class = "rad" type="radio" id="Curso corto" name="formato_curso" value="Curso corto">
+          <label for="Curso corto">Curso corto</label><br>
+          <input class = "rad" type="radio" id="Curso extenso" name="formato_curso" value="Curso extenso">
+          <label for="Curso extenso">Curso extenso</label><br>
+        <input type="submit" id="submit-btn">
+       </form>
+    </main>
+</body>
+</html>
